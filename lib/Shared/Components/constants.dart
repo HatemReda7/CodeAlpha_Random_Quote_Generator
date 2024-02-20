@@ -1,2 +1,2 @@
 String baseUrl= "api.api-ninjas.com";
-String ApiKey="g/jno6l2Hjyjz4mjbMPk5w==2Vf06lkhQ69FF0VX";
+String ApiKey="I8Vhaq29hhl6XLmvR5bBgJG1NBD93sCMaGLF0EDf";
