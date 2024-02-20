@@ -36,6 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   return const Center(child: CircularProgressIndicator());
                 }
                 if (snapshot.hasError) {
+                  var error = snapshot?.error;
+                  print(error);
                   return const Center(child: Text("Something went wrong!"));
                 }
                 var category = snapshot.data?.category ?? "";
