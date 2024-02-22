@@ -1,3 +1,4 @@
+import 'package:codealpha_random_quote_generator/Layout/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'Layout/my_home_page.dart';
@@ -13,13 +14,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
-      builder: (context, child) =>
-          const MaterialApp(
-            locale: Locale("en"),
-            debugShowCheckedModeBanner: false,
-            home: MyHomePage(),
-
-          ),
+      builder: (context, child) => MaterialApp(
+        locale: Locale("en"),
+        debugShowCheckedModeBanner: false,
+        initialRoute: SplashScreen.routeName,
+        routes: {
+          SplashScreen.routeName: (context) => const SplashScreen(),
+          HomeScreen.routeName: (context) => const HomeScreen()
+        },
+      ),
     );
   }
 }
