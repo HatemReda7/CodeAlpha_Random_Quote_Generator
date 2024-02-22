@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       builder: (context, child) => MaterialApp(
-        locale: Locale("en"),
+        locale: const Locale("en"),
         debugShowCheckedModeBanner: false,
         initialRoute: SplashScreen.routeName,
         routes: {
