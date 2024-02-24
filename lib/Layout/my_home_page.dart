@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // For the share on social media feature, You will have to run the app on master branch and then change branches to share_function while app is running,
-  // to use the share feature!
+  // and make sure to hot restart to use the share feature!
   //that's due to an error that pops for me when adding the share_plus package, not sure why is this error showing, Please inform me if you know how to fix this error!
   // And So Sorry for the inconvenience!
 
