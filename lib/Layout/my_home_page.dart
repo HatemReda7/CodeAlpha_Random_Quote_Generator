@@ -50,12 +50,11 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 20.h),
                 child: IntrinsicHeight(
                   child: _isLoading
                       ? const Center(child: CircularProgressIndicator())
@@ -74,12 +73,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return AppBar(
       centerTitle: true,
       backgroundColor: Colors.pinkAccent.shade700,
-      foregroundColor: Colors.black,
+      toolbarHeight: 60.h,
       title: Text(
         "Random Quotes",
         style: GoogleFonts.poppins(
           color: Colors.white,
-          fontSize: 20,
+          fontSize: 24.sp,
           fontWeight: FontWeight.w600,
         ),
       ),
@@ -92,19 +91,18 @@ class _HomeScreenState extends State<HomeScreen> {
         Container(
           decoration: BoxDecoration(
             color: Colors.pink.shade400,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(10.r),
           ),
           child: Column(
             children: [
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
                 child: Text(
                   _quotes ?? "😃Click 'Generate' for quotes😃",
                   textAlign: TextAlign.start,
                   style: GoogleFonts.poppins(
                     color: Colors.white,
-                    fontSize: 16,
+                    fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
                     letterSpacing: .4,
                   ),
@@ -116,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Padding(
                       padding:
-                          const EdgeInsets.only(top: 20, right: 30, bottom: 5),
+                          EdgeInsets.only(top: 20.h, right: 30.w, bottom: 5.h),
                       child: Align(
                         alignment: Alignment.bottomRight,
                         child: Text(
@@ -133,16 +131,13 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        const SizedBox(
-          height: 10,
-        ),
       ],
     );
   }
 
   Widget _buildGenerateButton() {
     return Padding(
-      padding: const EdgeInsets.only(top: 100),
+      padding: EdgeInsets.only(top: 80.h),
       child: Center(
           child: ElevatedButton(
               onPressed: () {
@@ -157,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               style: ButtonStyle(
                   shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16))),
+                      borderRadius: BorderRadius.circular(16.r))),
                   fixedSize: MaterialStatePropertyAll(Size(200.w, 40.h)),
                   backgroundColor:
                       const MaterialStatePropertyAll(Colors.white)),
