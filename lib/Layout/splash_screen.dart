@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // Size size = MediaQuery.sizeOf(context);
     return Container(
       // width: size.width,
-      color: Colors.pinkAccent,
+      color: Colors.pink.shade200,
       child: Center(
         child: Image.asset(
           "assets/logo.png",
